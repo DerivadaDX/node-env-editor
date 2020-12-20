@@ -4,6 +4,7 @@
 	"description": "Environment variables editor for Node.js",
 	"main": "index.js",
 	"scripts": {
+		"build": "tsc",
 		"test": "jest",
 		"coverage": "jest --coverage"
 	},
