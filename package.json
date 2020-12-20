@@ -19,5 +19,8 @@
 	"bugs": {
 		"url": "https://github.com/DerivadaDX/node-env-editor/issues"
 	},
-	"homepage": "https://github.com/DerivadaDX/node-env-editor#readme"
+	"homepage": "https://github.com/DerivadaDX/node-env-editor#readme",
+	"dependencies": {
+		"typescript": "^4.1.3"
+	}
 }
