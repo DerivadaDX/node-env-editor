@@ -1,4 +1,4 @@
-class EnvEditor {
+export class EnvEditor {
 
 	static get(key: string): string {
 		throw new Error('Not implemented');
