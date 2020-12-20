@@ -22,5 +22,8 @@
 	"homepage": "https://github.com/DerivadaDX/node-env-editor#readme",
 	"dependencies": {
 		"typescript": "^4.1.3"
+	},
+	"devDependencies": {
+		"@tsconfig/node12": "^1.0.7"
 	}
 }
