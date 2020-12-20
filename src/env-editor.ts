@@ -1,7 +1,7 @@
 export class EnvEditor {
 
-	static get(key: string): string {
-		throw new Error('Not implemented');
+	static get(key: string): string | undefined {
+		return process.env[key];
 	}
 
 	static set(key: string, value: string): void {
