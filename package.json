@@ -1,0 +1,23 @@
+{
+	"name": "node-env-editor",
+	"version": "0.0.1",
+	"description": "Environment variables editor for Node.js",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DerivadaDX/node-env-editor.git"
+	},
+	"keywords": [
+		"node",
+		"env"
+	],
+	"author": "DerivadaDX",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/DerivadaDX/node-env-editor/issues"
+	},
+	"homepage": "https://github.com/DerivadaDX/node-env-editor#readme"
+}
