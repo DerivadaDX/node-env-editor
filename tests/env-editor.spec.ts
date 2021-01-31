@@ -5,4 +5,8 @@ describe('1. Get values:', () => {
 		expect(EnvEditor.get('')).toBeUndefined();
 		expect(EnvEditor.get('hopefully_non-existent_key')).toBeUndefined();
 	});
+
+	test('2. Get an existent key should return its value.', () => {
+		expect(EnvEditor.get('NODE_ENV')).toBeDefined;
+	});
 });
