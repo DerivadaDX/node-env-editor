@@ -14,3 +14,13 @@ describe('1. Get values:', () => {
 		expect(EnvEditor.get(knownExistentKey)).toBeDefined;
 	});
 });
+
+describe('2. Set values:', () => {
+	test('1. Setting a value should make it exists.', () => {
+		const expected = 'test value';
+
+		EnvEditor.set(testKey, expected);
+
+		expect(EnvEditor.get(testKey)).toBe(expected);
+	});
+});
