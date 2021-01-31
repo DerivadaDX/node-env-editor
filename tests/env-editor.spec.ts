@@ -7,6 +7,8 @@ describe('1. Get values:', () => {
 	});
 
 	test('2. Get an existent key should return its value.', () => {
-		expect(EnvEditor.get('NODE_ENV')).toBeDefined;
+		const knownExistentKey = 'NODE_ENV';
+
+		expect(EnvEditor.get(knownExistentKey)).toBeDefined;
 	});
 });
