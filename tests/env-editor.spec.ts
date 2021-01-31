@@ -5,8 +5,4 @@ describe('1. Get values:', () => {
 		expect(EnvEditor.get('')).toBeUndefined();
 		expect(EnvEditor.get('hopefully_non-existent_key')).toBeUndefined();
 	});
-
-	test('2. Get and undefined key should return undefined', () => {
-		expect(EnvEditor.get('FOO_BAR')).toBeUndefined();
-	});
 });
