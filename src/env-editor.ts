@@ -5,7 +5,7 @@ export class EnvEditor {
 	}
 
 	static set(key: string, value: string): void {
-		throw new Error('Not implemented');
+		process.env[key] = value;
 	}
 
 	static unset(key: string): void {
