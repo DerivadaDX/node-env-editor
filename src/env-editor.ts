@@ -9,7 +9,7 @@ export class EnvEditor {
 	}
 
 	static unset(key: string): void {
-		throw new Error('Not implemented');
+		delete process.env[key];
 	}
 
 }
