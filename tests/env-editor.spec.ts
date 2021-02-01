@@ -17,7 +17,7 @@ describe('1. Get values:', () => {
 
 describe('2. Set values:', () => {
 	test('1. Setting a value should make it exists.', () => {
-		const expected = 'test value';
+		const expected = testValue;
 
 		EnvEditor.set(testKey, expected);
 
