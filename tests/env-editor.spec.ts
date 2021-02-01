@@ -22,4 +22,13 @@ describe('2. Set values:', () => {
 
 		expect(EnvEditor.get(testKey)).toBe(expected);
 	});
+
+	test('2. Setting a value to empty string key should make it exists.', () => {
+		const emptyStringKey = '';
+		const expected = 'test value';
+
+		EnvEditor.set(emptyStringKey, expected);
+
+		expect(EnvEditor.get(emptyStringKey)).toBe(expected);
+	});
 });
