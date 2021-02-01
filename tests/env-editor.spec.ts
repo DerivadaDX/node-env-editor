@@ -32,3 +32,19 @@ describe('2. Set values:', () => {
 		expect(EnvEditor.get(emptyStringKey)).toBe(expected);
 	});
 });
+
+describe('3. Unset values:', () => {
+	afterEach(() => EnvEditor.unset(testKey));
+
+	test('1. Unset a key should make its value undefined.', () => {
+		EnvEditor.unset(testKey);
+
+		expect(EnvEditor.get(testKey)).toBeUndefined();
+	});
+
+	test('2. Unset a key with an undefined value should work.', () => {
+		EnvEditor.unset(testKey);
+
+		expect(EnvEditor.get(testKey)).toBeUndefined();
+	});
+});
