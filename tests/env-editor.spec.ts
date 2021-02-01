@@ -1,6 +1,7 @@
 import { EnvEditor } from '../src/env-editor';
 
 const testKey = 'NODE_ENV_EDITOR_TEST_KEY';
+const testValue = 'test value';
 
 describe('1. Get values:', () => {
 	test('1. Get a non-existent key should return undefined.', () => {
@@ -25,7 +26,7 @@ describe('2. Set values:', () => {
 
 	test('2. Setting a value to empty string key should make it exists.', () => {
 		const emptyStringKey = '';
-		const expected = 'test value';
+		const expected = testValue;
 
 		EnvEditor.set(emptyStringKey, expected);
 
@@ -37,6 +38,7 @@ describe('3. Unset values:', () => {
 	afterEach(() => EnvEditor.unset(testKey));
 
 	test('1. Unset a key should make its value undefined.', () => {
+		EnvEditor.set(testKey, testValue);
 		EnvEditor.unset(testKey);
 
 		expect(EnvEditor.get(testKey)).toBeUndefined();
